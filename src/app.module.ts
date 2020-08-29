@@ -9,6 +9,7 @@ import { ChildComponent } from './components/component-interaction/child/child.c
 import { DatabindingComponent } from './components/databinding/databinding.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BootstrapComponent } from './components/bootstrap/bootstrap.component';
+import { RoutingComponent } from './components/routing/routing.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BootstrapComponent } from './components/bootstrap/bootstrap.component';
     ComponentInteractionComponent,
     ChildComponent,
     DatabindingComponent,
-    BootstrapComponent
+    BootstrapComponent,
+    RoutingComponent
   ],
   imports: [
     BrowserModule,
