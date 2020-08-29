@@ -1,13 +1,20 @@
-<div>
-  <h2>Angular examples</h2>
-  <span>See the following list for the topics:</span>
-
-  <div class="navigation">
-    <ul>
-      <li><a routerLink="/databinding" routerLinkActive="active">Databinding</a></li>
-      <li><a routerLink="/component-interaction" routerLinkActive="active">Component interaction</a></li>
-    </ul>
+<div class="app">
+  <div class="component-header">
+    <h2>Angular examples</h2>
+    <span>Choose a topic to see the samples:</span>
   </div>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/databinding" routerLinkActive="active">Databinding</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/component-interaction" routerLinkActive="active">Component interaction</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/bootstrap" routerLinkActive="active">Bootstrap</a>
+    </li>
+  </ul>
 
   <router-outlet></router-outlet>
 </div>
