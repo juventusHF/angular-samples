@@ -5,6 +5,7 @@ import { ComponentInteractionComponent } from './components/component-interactio
 import { BootstrapComponent } from './components/bootstrap/bootstrap.component';
 import { RoutingComponent } from './components/routing/routing.component';
 import { DirectivesComponent } from './components/directives/directives.component';
+import { PipesComponent } from './components/pipes/pipes.component';
 
 const routes: Routes = [
   { path: 'databinding', component: DatabindingComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'bootstrap', component: BootstrapComponent },
   { path: 'routing', component: RoutingComponent },
   { path: 'directives', component: DirectivesComponent },
+  { path: 'pipes', component: PipesComponent },
   // { path: 'path2/:id', component: SecondComponent },
   // { path: '', redirectTo: '/home', pathMatch: 'full' },
   // { path: '**', component: PageNotFoundComponent }

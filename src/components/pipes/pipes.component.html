@@ -1,0 +1,21 @@
+<div class="app-component">
+  <div class="component-header">
+    <h3>Pipes</h3>
+    <p>Pipes are used to transform data for display.<br>
+    There are many predefined pipes in Angular, such as:</p>
+    <ul>
+      <li>date: {{today | date}}</li>
+      <li>uppercase: {{'some text' | uppercase}}</li>
+      <li>lowercase: {{'Some Text' | lowercase}}</li>
+      <li>currency: {{amount | currency: 'CHF'}}</li>
+      <li>percent: {{percent | percent}}</li>
+      <li>number: {{pi | number:'1.1-2'}}</li>
+      <li>...</li>
+      <li>pipes can be chained: {{today | date: 'fullDate' | uppercase}}</li>
+    </ul>
+  </div>
+  <div>
+    <p>Custom pipes can be defined as well (see exponential-strength.pipe.ts)</p>
+    <span>2^10 = {{2 | exponentialStrength:10}}</span>
+  </div>
+</div>

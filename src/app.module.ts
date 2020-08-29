@@ -12,6 +12,8 @@ import { BootstrapComponent } from './components/bootstrap/bootstrap.component';
 import { RoutingComponent } from './components/routing/routing.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { PipesComponent } from './components/pipes/pipes.component';
+import { ExponentialStrengthPipe } from './pipes/exponential-strength.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HighlightDirective } from './directives/highlight.directive';
     BootstrapComponent,
     RoutingComponent,
     DirectivesComponent,
-    HighlightDirective
+    HighlightDirective,
+    PipesComponent,
+    ExponentialStrengthPipe
   ],
   imports: [
     BrowserModule,
