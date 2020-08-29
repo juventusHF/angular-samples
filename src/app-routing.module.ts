@@ -6,6 +6,7 @@ import { BootstrapComponent } from './components/bootstrap/bootstrap.component';
 import { RoutingComponent } from './components/routing/routing.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { PipesComponent } from './components/pipes/pipes.component';
+import { ServicesComponent } from './components/services/services.component';
 
 const routes: Routes = [
   { path: 'databinding', component: DatabindingComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'routing', component: RoutingComponent },
   { path: 'directives', component: DirectivesComponent },
   { path: 'pipes', component: PipesComponent },
+  { path: 'services', component: ServicesComponent },
   // { path: 'path2/:id', component: SecondComponent },
   // { path: '', redirectTo: '/home', pathMatch: 'full' },
   // { path: '**', component: PageNotFoundComponent }

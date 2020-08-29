@@ -14,6 +14,7 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { HighlightDirective } from './directives/highlight.directive';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ExponentialStrengthPipe } from './pipes/exponential-strength.pipe';
+import { ServicesComponent } from './components/services/services.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ExponentialStrengthPipe } from './pipes/exponential-strength.pipe';
     DirectivesComponent,
     HighlightDirective,
     PipesComponent,
-    ExponentialStrengthPipe
+    ExponentialStrengthPipe,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

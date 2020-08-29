@@ -1,0 +1,44 @@
+<div class="app-component">
+  <div class="component-header">
+    <h3>Services</h3>
+    <p>
+      A service can be used to implement any task that doesn't belong to a specific component.<br>
+      A service can be injected in any component, or even in other services.
+    </p>
+  </div>
+  <form>
+    <div class="row app-row">
+      <div class="col-auto">Place order: </div>
+      <div class="col">
+        <div ngbDropdown class="d-inline-block">
+          <button class="btn btn-outline-dark" id="dropdownBasic1" ngbDropdownToggle>Select..</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem
+                    *ngFor="let coffee of availableCoffees"
+                    (click)="placeOrder(coffee)">
+              {{coffee.name}} ({{coffee.price | currency:'CHF'}})
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row app-row">
+      <div class="col">Your current order: </div>
+    </div>
+    <div class="row app-row">
+      <div class="col">
+        <ul>
+          <li *ngFor="let coffee of orderedCoffees">
+            {{coffee.name}}
+            <button (click)="cancelOrder(coffee)">X</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row app-row">
+      <div class="col">
+        <b>Total price of your order: {{totalPrice | currency:'CHF'}}</b>
+      </div>
+    </div>
+  </form>
+</div>
