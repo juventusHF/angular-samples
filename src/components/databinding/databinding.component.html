@@ -1,0 +1,21 @@
+<div>
+  <h3>Databinding</h3>
+  <span>There are 4 ways to bind data:</span>
+  <ul>
+    <li><b>value:</b> used to bind a variable from the component to its template (unidirectional)</li>
+    <li><b>property:</b> used to bind properties on a html or angular element (unidirectional)</li>
+    <li><b>event:</b> used to bind an event on a html or angular event (unidirectional)</li>
+    <li><b>ngModel:</b> used to bind a variable from the component to a html or angular element (bidirectional)</li>
+  </ul>
+
+  {{valueBinding}}
+  <br><br>
+  <button [disabled]="isDisabled">The disabled property is bound via [property] syntax</button>
+  <br><br>
+  <button (click)="onClick()">The click event is bound via (event) syntax</button>
+  <br><br>
+  <input type="text" [(ngModel)]="inputText">
+  <button (click)="changeText()">change text</button>
+  <br>
+  {{inputText}}
+</div>
