@@ -1,0 +1,59 @@
+<div class="app-component">
+  <div class="component-header">
+    <h3>Directives</h3>
+    <p>There are three types of directives:</p>
+    <ul>
+      <li>A <b>component</b> is a directive.</li>
+      <li>
+        <b>Structural-Directives</b> add, remove, or replace elements in the DOM.
+        <br><i>*ngIf</i> and <i>*ngFor</i> are the most common examples.
+      </li>
+      <li>
+        <b>Attribute-Directives</b> change the appearance, or behaviour of elements.
+        <br><i>[ngClass]</i> and <i>[(ngModel)]</i> are the most common examples.
+      </li>
+    </ul>
+  </div>
+
+  <hr>
+  <form>
+    <div class="row app-row">
+      <div class="col">With <i>*ngIf</i>, an element gets rendered or not based on a condition.</div>
+    </div>
+    <div class="row app-row">
+      <div class="col-auto"><input [(ngModel)]="render" type="checkbox" name="render">Render</div>
+      <div class="col"><img *ngIf="render" src="assets/ghost.png" width="30px"></div>
+    </div><hr>
+    <div class="row app-row">
+      <div class="col"><i>*ngFor</i> iterates over an array and displays an element for each item in the array.</div>
+    </div>
+    <div class="row app-row">
+      <div class="col-auto">
+        <ul><li *ngFor="let item of timestamps">{{item}}</li></ul>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-dark" (click)="addTimestamp()">Add</button>
+        <button class="btn btn-outline-dark" (click)="removeTimestamp()">Remove</button>
+      </div>
+    </div><hr>
+    <div class="row app-row">
+      <div class="col">
+        <span>With <i>[ngClass]</i>, classes can be applied conditionally.</span>
+      </div>
+    </div>
+    <div class="row app-row">
+      <div class="col-auto"><input [(ngModel)]="redText" type="checkbox" name="redText">Red text</div>
+      <div class="col-auto">
+        <span [ngClass]="{'text-red': redText}">See how my color changes!</span>
+      </div>
+    </div><hr>
+    <div class="row app-row">
+      <div class="col-auto">
+        This is a custom attribute directive (hover to highlight):
+      </div>
+      <div class="col-auto">
+        <p [appHighlight]="'yellow'">Woohoooo!</p>
+      </div>
+    </div>
+  </form>
+</div>

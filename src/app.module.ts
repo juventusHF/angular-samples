@@ -10,6 +10,8 @@ import { DatabindingComponent } from './components/databinding/databinding.compo
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BootstrapComponent } from './components/bootstrap/bootstrap.component';
 import { RoutingComponent } from './components/routing/routing.component';
+import { DirectivesComponent } from './components/directives/directives.component';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { RoutingComponent } from './components/routing/routing.component';
     ChildComponent,
     DatabindingComponent,
     BootstrapComponent,
-    RoutingComponent
+    RoutingComponent,
+    DirectivesComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
