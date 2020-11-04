@@ -5,10 +5,9 @@
       Http calls can be done with the Angular HttpClient.<br>
       It provides functions for all http methods, that return an observable.
     </p>
-
-    <button class="btn btn-outline-dark" (click)="loadJoke()">Load joke</button>
-    <div style="margin-top: 20px" *ngIf="jokeResponse">
-      {{jokeResponse.value.joke}}
-    </div>
+  </div>
+  <button class="btn btn-outline-dark" (click)="loadJoke()">Load joke</button>
+  <div style="margin-top: 20px" *ngIf="jokeResponse">
+    {{jokeResponse.value.joke}}
   </div>
 </div>

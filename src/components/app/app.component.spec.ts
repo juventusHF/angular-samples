@@ -1,35 +1,31 @@
-import { TestBed, async } from '@angular/core/testing';
+import {TestBed, async, ComponentFixture} from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
+
+  // Define variables for this spec file
+  let fixture: ComponentFixture<AppComponent>;
+  let app: AppComponent;
+
+  // Configure ng module for each test with the needed imports and declarations
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        AppComponent
-      ],
+      imports: [ RouterTestingModule ],
+      declarations: [ AppComponent ],
     }).compileComponents();
   }));
 
+  beforeEach(() => {
+    // Create a fixture of the AppComponent for each test
+    fixture = TestBed.createComponent(AppComponent);
+    // Get the instance of the AppComponent for each test
+    app = fixture.componentInstance;
+  });
+
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
+    // Assert that the component instance was successfully created
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-samples'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-samples');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-samples app is running!');
-  });
 });

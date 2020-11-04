@@ -8,6 +8,7 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ServicesComponent } from './components/services/services.component';
 import { HttpComponent } from './components/http/http.component';
+import { TestingComponent } from './components/testing/testing.component';
 
 const routes: Routes = [
   { path: 'data-binding', component: DatabindingComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'pipes', component: PipesComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'http', component: HttpComponent },
+  { path: 'testing', component: TestingComponent },
   // { path: 'path2/:id', component: SecondComponent },
   // { path: '', redirectTo: '/home', pathMatch: 'full' },
   // { path: '**', component: PageNotFoundComponent }

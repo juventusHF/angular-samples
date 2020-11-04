@@ -17,6 +17,7 @@ import { ExponentialStrengthPipe } from './pipes/exponential-strength.pipe';
 import { ServicesComponent } from './components/services/services.component';
 import { HttpComponent } from './components/http/http.component';
 import {HttpClientModule} from '@angular/common/http';
+import { TestingComponent } from './components/testing/testing.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {HttpClientModule} from '@angular/common/http';
     PipesComponent,
     ExponentialStrengthPipe,
     ServicesComponent,
-    HttpComponent
+    HttpComponent,
+    TestingComponent
   ],
   imports: [
     BrowserModule,
