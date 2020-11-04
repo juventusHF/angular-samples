@@ -7,15 +7,17 @@ import { RoutingComponent } from './components/routing/routing.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ServicesComponent } from './components/services/services.component';
+import { HttpComponent } from './components/http/http.component';
 
 const routes: Routes = [
-  { path: 'databinding', component: DatabindingComponent },
+  { path: 'data-binding', component: DatabindingComponent },
   { path: 'component-interaction', component: ComponentInteractionComponent },
   { path: 'bootstrap', component: BootstrapComponent },
   { path: 'routing', component: RoutingComponent },
   { path: 'directives', component: DirectivesComponent },
   { path: 'pipes', component: PipesComponent },
   { path: 'services', component: ServicesComponent },
+  { path: 'http', component: HttpComponent },
   // { path: 'path2/:id', component: SecondComponent },
   // { path: '', redirectTo: '/home', pathMatch: 'full' },
   // { path: '**', component: PageNotFoundComponent }

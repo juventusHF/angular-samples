@@ -15,6 +15,8 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { ExponentialStrengthPipe } from './pipes/exponential-strength.pipe';
 import { ServicesComponent } from './components/services/services.component';
+import { HttpComponent } from './components/http/http.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,10 +30,12 @@ import { ServicesComponent } from './components/services/services.component';
     HighlightDirective,
     PipesComponent,
     ExponentialStrengthPipe,
-    ServicesComponent
+    ServicesComponent,
+    HttpComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     NgbModule
